@@ -1,0 +1,161 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main{
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid #dadada;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.main h1{
+    font-size: 3vw;
+    font-family: "Baloo 2", sans-serif;
+    /* font-weight: 700; */
+}
+
+
+form{
+    display: flex;
+    position: relative;
+}
+
+.set{
+    position: relative;
+    top: -6vh;
+    left: 2.2vw;
+}
+
+.todo-value{
+    width: 50%;
+    height: 70%;
+    font-weight: 600; 
+    font-size: 20px;
+
+}
+
+.btn{
+    font-size: 1.8vw;
+    border-radius: 5px;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    position: relative;
+    top: 0.3vw;
+    font-weight: 600;
+}
+
+.todo-list{
+    width: 50%;
+    height: 50vh;
+    max-height: 50vh;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    left: 0.5vw;
+    top: -3vh;
+    overflow-y: auto;
+    align-items: center;
+
+
+}
+.todo-list::-webkit-scrollbar{
+    display: none;
+}
+.work{
+    flex: 0 1 auto;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    margin-top: 0.5vw;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 1px 8px 0px #7b7676;
+    font-weight: 600;
+    font-size:1.6vw ;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    list-style:none;
+    overflow-x: auto;
+    z-index: 10;
+    background-color: white;
+    
+}
+.work::-webkit-scrollbar{
+    display: none;
+}
+.lonely{
+    position: relative;
+    left: 45vw;
+
+}
+
+@media (max-width:600px){
+    .main{
+    top: 1vh;
+    width: 85vw;
+    height: 85vh;
+    gap: 2vh;
+}
+    
+    .main h1{
+        font-size:12vw;
+    }
+    .set{
+        top: -5vh;
+        left: 10vw;
+    }
+    .todo-value{
+        width: 50%;
+        height: 100%;
+        font-weight: 600; 
+        font-size: 20px;
+    
+    }
+    .btn{
+        font-size: 8vw;
+        top: 0.5vh;
+        
+    }
+    .todo-list{
+        left: 1vw;
+        top: -3vh;
+        overflow-y: auto;
+        align-items: center;
+        width: 85%;
+        height: auto;
+        min-height: 40vh;
+        max-height:70vh ;
+    
+    
+    }
+    .work{
+        margin:0.5vw;
+        font-weight: 600;
+        font-size:10vw ;
+        padding-top:1vh;
+        padding-bottom:1vh;  
+    }
+    .lonely{
+        position: relative;
+        left: 22vw;
+        bottom: 40vh;
+    
+    }
+    
+}
